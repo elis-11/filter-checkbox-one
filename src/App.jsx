@@ -5,8 +5,8 @@ import "./App.css";
 function App() {
   const [cars, setCars] = useState(carsData);
   const [productName, setProductName] = useState("");
-  const [priceMin, setPriceMin] = useState(0);
-  const [priceMax, setPriceMax] = useState(0);
+  const [priceMin, setPriceMin] = useState('');
+  const [priceMax, setPriceMax] = useState('');
   const [filteredCategory, setFilteredCategory] = useState("");
   let filteredCars = cars;
 
