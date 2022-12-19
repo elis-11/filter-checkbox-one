@@ -74,7 +74,7 @@ console.log(filteredCategory)
           <h4>Category:</h4>
           <div className="filterByCategory">
             <input
-              type="checkbox"
+              type="radio"
               name="categories"
               value="Toyota"
               onChange={(e) =>  setFilteredCategory(e.target.checked ? e.target.value : '')}
@@ -83,7 +83,7 @@ console.log(filteredCategory)
           </div>
           <div className="filterByCategory">
             <input
-              type="checkbox"
+              type="radio"
               name="categories"
               value="BMW"
               onChange={(e) => setFilteredCategory(e.target.checked ? e.target.value : '')}
@@ -92,7 +92,7 @@ console.log(filteredCategory)
           </div>
           <div className="filterByCategory">
             <input
-              type="checkbox"
+              type="radio"
               name="categories"
               value="Lexus"
               onChange={(e) => setFilteredCategory(e.target.checked ? e.target.value : '')}
