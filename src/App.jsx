@@ -5,12 +5,12 @@ import "./App.css";
 function App() {
   const [cars, setCars] = useState(carsData);
   const [productName, setProductName] = useState("");
-  const [priceMin, setPriceMin] = useState('');
-  const [priceMax, setPriceMax] = useState('');
+  const [priceMin, setPriceMin] = useState("");
+  const [priceMax, setPriceMax] = useState("");
   const [filteredCategory, setFilteredCategory] = useState("");
   let filteredCars = cars;
 
-console.log(filteredCategory)
+  console.log(filteredCategory);
   if (filteredCategory) {
     filteredCars = filteredCars.filter((car) => {
       return car.category.includes(filteredCategory);
@@ -70,32 +70,38 @@ console.log(filteredCategory)
             />
           </div>
         </div>
-        <div className="categories">
+        <div className="category">
           <h4>Category:</h4>
           <div className="filterByCategory">
             <input
               type="radio"
-              name="categories"
+              name="category"
               value="Toyota"
-              onChange={(e) =>  setFilteredCategory(e.target.checked ? e.target.value : '')}
+              onChange={(e) =>
+                setFilteredCategory(e.target.checked ? e.target.value : "")
+              }
             />
             <span>Toyota</span>
           </div>
           <div className="filterByCategory">
             <input
               type="radio"
-              name="categories"
+              name="category"
               value="BMW"
-              onChange={(e) => setFilteredCategory(e.target.checked ? e.target.value : '')}
+              onChange={(e) =>
+                setFilteredCategory(e.target.checked ? e.target.value : "")
+              }
             />
             <span>BMW</span>
           </div>
           <div className="filterByCategory">
             <input
               type="radio"
-              name="categories"
+              name="category"
               value="Lexus"
-              onChange={(e) => setFilteredCategory(e.target.checked ? e.target.value : '')}
+              onChange={(e) =>
+                setFilteredCategory(e.target.checked ? e.target.value : "")
+              }
             />
             <span>Lexus</span>
           </div>
